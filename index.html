@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Validação</title>
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>Cadastro de Alunos</h1>
+            <div class="campo1">
+                <section id="section_1">
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" class="required" oninput="nameValidate()" >
+                    <span class="span_required">*Este campo deve conter no mínino 3 caracteres</span>
+
+                </section>
+                <section id="section_2">
+                    <label for="Sobrenome">Sobrenome</label>
+                    <input id="sobrenome" name="sobrenome" type="text" class="required" oninput="sobreNomeValidate()">
+                    <span class="span_required" >*Este campo deve conter no mínino 3 caracteres</span>
+
+                </section>
+                <section id="section_3">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text" class="required" oninput="emailValidate()">
+                    <span class="span_required" >* Digite um email válido</span>
+
+                </section>
+            </div>
+        <div class="campo2">
+            <h3>Qual Série Você Esta?</h3><br>
+            <span class="span_Radio">* Escolha uma das opções abaixo:</span><br>
+            <label for="1">Primeiro</label>
+            <input  name="ano" value="primeiro" type="radio" onchange="validarRadios()">
+
+            <label for="2">Segundo</label>
+            <input  name="ano" value="segundo" type="radio"onchange="validarRadios()">
+
+            <label for="3">Terceiro</label>
+            <input name="ano" value="terceiro"type="radio"onchange="validarRadios()">
+        </div>
+        <div class="campo3">
+            <label for="boxSelect">Condição</label>
+            <span id="span_Condicao">* Selecione uma condição</span>
+            <select name="boxSelect" id="boxSelect" onchange="selectValidate()">
+                <option value="vazio" disabled selected></option>
+                <option name="estado" value="comecar">Começando</option>
+                <option name="estado" value="cursando">Cursando</option>
+                <option name="estado" value="lastAno">Ultimo Ano</option>
+            </select>
+        </div>
+        <div class="campo4">
+            <h3>Escolha a opção que mais combina com você:</h3>
+            <span class="span_Box">*Você deve selecionar pelo menos uma das opções disponíveis</span>
+            <div>
+                <input name="combina" id="op1" type="checkbox" value="1" onchange="checkboxValidate()">
+                <label for="op1">Curioso, me dou bem em materias de humanas, calmo(a).</label>
+            </div>
+            <div>
+                <input name="combina"type="checkbox" value="2" onchange="checkboxValidate()">
+                <label for="op1">Dedicado(a), gosto de desafios, lido bem com pressão, sou organizado(a).</label>
+            </div>
+           
+        </div>
+        <div class="campo5">
+            <label for="textArea">Conte um pouco mais de você.</label><br>
+            <span class="span_Text">*Este campo deve conter no mínino 10 caracteres</span>
+            <textarea name="textArea" id="textArea" cols="30" rows="5" oninput="validarTextArea()"></textarea>
+        </div>
+        <button id="btn">Enviar</button>
+    </form>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
