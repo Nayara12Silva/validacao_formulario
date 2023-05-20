@@ -18,6 +18,7 @@ Este projeto trata-se de um desafio proposto em aula com o objetivo de  pegar os
 Gostei muito de fazer este projeto pois coloquei em prática os conhecimentos adquiridos em aula. 
 
 #### 💻 Desafio Concluído 👍
+#### ⚠  O Projeto não está responsivo 😢 Ainda preciso ampliar meus conhecimento nessa área do css
 
 ### REDES SOCIAS:
 
