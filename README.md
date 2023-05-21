@@ -14,10 +14,13 @@ Este projeto trata-se de um desafio proposto em aula com o objetivo de  pegar os
 )]()
 
 ![tela 2](https://github.com/Nayara12Silva/validacao_formulario/assets/104741196/7f1c5f91-a047-4d23-9e8f-58f28fe693dc)
+ 
+ clique [Aqui]( https://nayara12silva.github.io/validacao_formulario/) para visualizar a página
 
 Gostei muito de fazer este projeto pois coloquei em prática os conhecimentos adquiridos em aula. 
 
 #### 💻 Desafio Concluído 👍
+
 #### ⚠  O Projeto não está responsivo 😢 Ainda preciso ampliar meus conhecimento nessa área do css
 
 ### REDES SOCIAS:
